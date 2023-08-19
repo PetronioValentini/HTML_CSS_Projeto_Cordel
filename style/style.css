@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif; /*fonte padrao */
+    --fonte2:'Passion One', cursive; /*titulos */
+    --fonte3:'Sriracha', cursive; /* texto */
+    
+
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+   
+}
+
+
+/* padroes nao sei pra q */
+html, body{
+    font-family: var(--fonte1);
+    min-height: 100vh;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+header h1{
+    font-size: 10vw; /* largura da tela (para ajustar a largura da fonte quando a tela mudar de tamanho) */ 
+    font-variant: small-caps; /*deixa as letras em maisculas e as iniciais maiores ainda */
+    font-family: var(--fonte2);
+}
+
+header p{
+    padding: 20px;
+    font-size: 1.2em;
+    
+    
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+
+
+section{
+    /*padding: 100px 0px 100px 40px;*/
+    padding: 10vh 0vh 10vh 30px; /* vh = view hight (faz o padding de acordo com o tamanho da tela, melhor para se adptar ao celular do que o px) */
+
+
+}
+
+section p{
+
+    font-size: 4.5vw; /* largura da tela (para ajustar a largura da fonte quando a tela mudar de tamanho) */ 
+    line-height: 2em;
+    padding: 20px 10px 10px 10px;
+    font-family: var(--fonte3);
+}
+
+section.normal p{
+    color: black;
+        
+}
+
+section.img p{
+    /* width: 400px; */
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    background-color: rgba(29, 26, 26, 0.514); /* DA O EFEITO DE TRANSPARENCIA DA LETRA COM O FUNDO */
+    display: inline-block; /*contorno do texto para dps das letra */    
+}
+
+section#img01{
+
+    background-image: url("../imagens/background001.jpg");
+   
+
+}
+
+section.img{
+    
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 6px 6px 13px 0px black; /* efeito de sombra na imagem */
+
+}
+
+section#img02{
+    background-image: url("../imagens/background002.jpg");
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
